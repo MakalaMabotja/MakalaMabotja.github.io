@@ -7,39 +7,50 @@
 <section id="banner">
     <div class="content">
         <header>
-            <h1>Project Work</h1>
-            <span class="image object">
-                <img src="{{ projects_data.banner_image }}" class="rounded mx-auto d-block" alt="{{ projects_data.title }}" />
-            </span>
+            <h1>{{projects_data.title}}</h1>
         </header>
-        <h3>Welcome to my portfolio website. I have experience in data cleaning & manipulation, data visualization, supervised and unsupervised machine learning, project management, web development and machine learning deployment.
-            This website was built using HTML, CSS & JS. Templates provided by HTML5 up
-        </h3>
-        <ul class="actions">
-            <li><a href="{{ url_for('views.about') }}" class="button big">Learn More</a></li>
-        </ul>
-    </div>
+        <p>{{projects_data.description}}
+        </p>
+    </div>  
+    <span class="image object">
+        <img src="{{ url_for('static', filename=projects_data.banner_image) }}" class="rounded mx-auto d-block" alt="{{ projects_data.title }}" />
+
+    </span>
 </section>
+
 {% endblock %}
 
 {% block body %}
 <!-- Projects Section -->
 <section>
     <header class="major">
-        <h2>Projects</h2>
+        <h2>Sections</h2>
     </header>
-
-    {% for section, section_text, tools, url, image, note in zip(projects_data.sections, projects_data.section_text, projects_data.tools, projects_data.urls, projects_data.images, projects_data.notes) %}
-        <article>
-            <h3>{{ section }}</h3>
-            <p>{{ section_text }}</p>
-            <p>Tools: {{ tools }}</p>
-            <p>GitHub Repository: <a href="{{ url }}" target="_blank">{{ url }}</a></p>
-            <img src="{{ image }}" alt="Project Image">
-            <p>Note: {{ note }}</p>
-        </article>
-    {% endfor %}
-
+    <div class="row">
+        {% for i in range(projects_data['sections']|length) %}
+            <div class="col-6 col-12-small">
+                
+                    <article>
+                        <span href={{ projects_data['urls'][i] }} class="image fit">
+                            
+                            <img src="{{ url_for('static', filename=projects_data['images'][i]) }}" class="rounded mx-auto d-block" alt="{{ projects_data['sections'][i] }}" style="text-align: center; width: 480px; height: 300px;" />
+                            
+                        </span>
+                        <h3>{{ projects_data['sections'][i] }}</h3>
+                        <p>{{ projects_data['section_text'][i] }}</p>
+                        <!-- Add other details like tools, URL, image, note based on the index -->
+                        <ul>
+                            <li>Tools: {{ projects_data['tools'][i] }}</li>
+                            <ul class="actions">
+                                <li><a href={{projects_data['urls'][i]}} class="button">View Code</a></li>
+                            </ul>
+                            <!-- Add other details as needed -->
+                        </ul>
+                    </article>
+                
+            </div>
+        {% endfor %}
+    </div>
 
 </section>
 

@@ -19,12 +19,15 @@ def home():
 def about():
     return render_template('about.html')
 
-
+@views.route('/projects')
 def projects():
-    # Instantiate the Projects class
-    projects_instance = Projects()
-
-    # Example: Get information for the "Sales Project"
-    sales_project_data = projects_instance.get_project('sales_project')
-
-    return render_template('projects.html', sales_project_data=sales_project_data)
+    # Specify the path to your project data file
+    project_data_file = 'website/projects.json'
+    
+    # Create an instance of the Projects class
+    projects_instance = Projects(project_data_file)
+    
+    # Retrieve project information (adjust the project name as needed)
+    project_info = projects_instance.get_project('sales')
+    print(project_info['title'])
+    return render_template('projects.html', projects_data=project_info)

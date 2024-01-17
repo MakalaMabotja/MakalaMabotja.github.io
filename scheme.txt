@@ -7,6 +7,7 @@ project folder
 |--- index.html
 |--- projects.html
 |-__init__.py
-|- routes.py
+|- projects.json
+|- projects.py
 |- views.py
 |mainapp.py

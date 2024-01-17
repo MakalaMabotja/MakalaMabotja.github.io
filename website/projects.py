@@ -1,9 +1,9 @@
 import json
 
 class Projects:
-    def __init__(self):
-        # Load project data from JSON file
-        with open('projects.json', 'r') as file:
+    def __init__(self, project_file_path):
+        # Load project data from the specified JSON file
+        with open(project_file_path, 'r') as file:
             self.projects_data = json.load(file)
 
     def get_project(self, project_name):
