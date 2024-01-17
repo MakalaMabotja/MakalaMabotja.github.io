@@ -1,0 +1,12 @@
+project folder
+|-website
+|--static (with css, js & images folders)
+|-- templates
+|--- about_me.html
+|--- home.html
+|--- index.html
+|--- projects.html
+|-__init__.py
+|- routes.py
+|- views.py
+|mainapp.py

@@ -1,0 +1,123 @@
+{% extends "index.html" %}
+{%block banner%}
+<!-- Banner -->
+            <section id="banner">
+                <div class="content">
+                    <header>
+                        <h1>Making <br />
+                        Data-driven Decisions</h1>
+                        <p>SQL, R, Python, PowerBI & Tableau</p>
+                    </header>
+                    <p>Welcome to my portfolio website. I have experience in data cleaning & manipulation, data visualization, supervised and unsupervised machine learning, project management, web development and machine learning deployment.
+                        This website was built using HTML, CSS & JS. Templates provided by HTML5 up
+                    </p>
+                    <ul class="actions">
+                        <li><a href="{{ url_for('views.about') }}" class="button big">Learn More</a></li>
+                    </ul>
+                </div>
+                <span class="image object">
+                    <img src="{{ url_for('static', filename='images/Neural_network.png') }}" class="rounded mx-auto d-block" alt="" />
+
+                </span>
+            </section>
+            
+{% endblock %}
+{% block body %}
+
+            <!-- Section -->
+            <section>
+                <header class="major">
+                    <h2>Programming Languages</h2>
+                </header>
+                <div class="features">
+                    <article>
+                        <span  class="img-thumbnail"><a href="https://www.python.org/about/"><img  src="https://img.icons8.com/?size=80&id=hGdCwhSHUe6L&format=png" class="img-thumbnail"></span>
+                        <div class="content">
+                            <h3>Python</a></h3>
+                            <p>Python is a robust language for data science, known for its simplicity and readability. It lets you lets you work quickly
+                                and integrate systems more effectively.I use it for developing AI tools and machine learning models.</p>
+                        </div>
+                    </article>
+                    <article>
+                        <span class="img-thumbnail"><a href="https://www.microsoft.com/en-us/power-platform/products/power-bi"><img src="https://img.icons8.com/?size=80&id=3sGOUDo9nJ4k&format=png" class="rounded mx-auto d-block"></span>
+                        <div class="content">
+                            <h3>Power BI</a></h3>
+                            <p>Power BI is a powerful business intelligence tool used to visualize and convey insights. I leverage this tool to create interactive dashboards for communicating business objectives.</p>
+                        </div>
+                    </article>
+                    <article>
+                        <span class="img-thumbnail"><a href="https://www.microsoft.com/en-us/sql-server/sql-server-2022"><img src="https://img.icons8.com/?size=80&id=Ign0QG33bZzq&format=png" class="rounded mx-auto d-block"></span>
+                        <div class="content">
+                            <h3>SQL</a></h3>
+                            <p>SQL is a language for managing databases and creating relational tables, providing data for analysis. It is commonly accessed through tools like SQL Server Management Studio (SSMS), and alternatives include MySQL and NoSQL databases.</p>
+                        </div>
+                    </article>
+                    <article>
+                        <span class="img-thumbnail"><a href="https://www.tableau.com/en-gb/products/desktop"><img src="https://img.icons8.com/?size=48&id=9Kvi1p1F0tUo&format=png" class="rounded mx-auto d-block" style="width: 80px; height: 80px;"></span>
+                        <div class="content">
+                            <h3>Tableau</a></h3>
+                            <p>
+                                Tableau is a business intelligence tool, similar to Power BI, that provides Tableau Desktop for data access, visualization, and analysis. It offers an intuitive interface for uncovering insights, facilitating fast decision-making with offline capabilities, and ensures secure self-service with trusted data.</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <!-- Section -->
+            <section>
+                <header class="major">
+                    <h2>Featured Projects</h2>
+                </header>
+                <div class="posts">
+                    <article>
+                        <a href="{{ url_for('views.projects') }}" class="image"><img src="{{ url_for('static', filename='images/pic01.jpg') }}" alt="" /></a>
+                        <h3>Nashville Housing Prices</h3>
+                        <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+                        <ul class="actions">
+                            <li><a href="{{ url_for('views.projects') }}" class="button">More</a></li>
+                        </ul>
+                    </article>
+                    <article>
+                        <a href="{{ url_for('views.projects') }}" class="image"><img src="{{ url_for('static', filename='images/pic02.jpg') }}" alt="" /></a>
+                        <h3>Spaceship Titanic</h3>
+                        <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+                        <ul class="actions">
+                            <li><a href="{{ url_for('views.projects') }}" class="button">More</a></li>
+                        </ul>
+                    </article>
+                    <article>
+                        <a href="{{ url_for('views.projects') }}" class="image"><img src="{{ url_for('static', filename='images/pic03.jpg') }}" alt="" /></a>
+                        <h3>e-Commerce Sales Analysis</h3>
+                        <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+                        <ul class="actions">
+                            <li><a href="{{ url_for('views.projects') }}" class="button">More</a></li>
+                        </ul>
+                    </article>
+                    <article>
+                        <a href="{{ url_for('views.projects') }}" class="image"><img src="{{ url_for('static', filename='images/pic04.jpg') }}" alt="" /></a>
+                        <h3>Customer Churn Prediction</h3>
+                        <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+                        <ul class="actions">
+                            <li><a href="{{ url_for('views.projects') }}" class="button">More</a></li>
+                        </ul>
+                    </article>
+                    <article>
+                        <a href="{{ url_for('views.projects') }}" class="image"><img src="{{ url_for('static', filename='images/pic06.jpg') }}" alt="" /></a>
+                        <h3>Feugiat lorem aenean</h3>
+                        <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+                        <ul class="actions">
+                            <li><a href="{{ url_for('views.projects') }}" class="button">More</a></li>
+                        </ul>
+                    </article>
+                    <article>
+                        <a href="{{ url_for('views.projects') }}" class="image"><img src="{{ url_for('static', filename='images/pic05.jpg') }}" alt="" /></a>
+                        <h3>Amet varius aliquam</h3>
+                        <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+                        <ul class="actions">
+                            <li><a href="{{ url_for('views.projects') }}" class="button">More</a></li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+
+
+{% endblock %}
