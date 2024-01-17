@@ -1,5 +1,6 @@
 from flask import Blueprint, render_template, request, flash, jsonify
 from flask_login import login_required, current_user
+from .projects import Projects
 # from .models import Note
 # from . import db
 import json
@@ -19,7 +20,11 @@ def about():
     return render_template('about.html')
 
 
-@views.route('/projects/')
 def projects():
+    # Instantiate the Projects class
+    projects_instance = Projects()
 
-    return render_template('projects.html')
+    # Example: Get information for the "Sales Project"
+    sales_project_data = projects_instance.get_project('sales_project')
+
+    return render_template('projects.html', sales_project_data=sales_project_data)
