@@ -19,15 +19,20 @@ def home():
 def about():
     return render_template('about.html')
 
-@views.route('/projects')
-def projects():
+@views.route('/projects/<project_name>')
+def projects(project_name):
     # Specify the path to your project data file
     project_data_file = 'website/projects.json'
     
     # Create an instance of the Projects class
     projects_instance = Projects(project_data_file)
     
-    # Retrieve project information (adjust the project name as needed)
-    project_info = projects_instance.get_project('sales')
-    print(project_info['title'])
-    return render_template('projects.html', projects_data=project_info)
+    # Retrieve project information based on the dynamic project name
+    project_info = projects_instance.get_project(project_name)
+    
+    # Check if the project exists
+    if project_info:
+        return render_template('projects.html', projects_data=project_info)
+    else:
+        flash(f'Project "{project_name}" not found', 'error')
+        return render_template('home.html')

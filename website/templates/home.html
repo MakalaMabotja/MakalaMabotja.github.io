@@ -69,51 +69,51 @@
                 </header>
                 <div class="posts">
                     <article>
-                        <a href="{{ url_for('views.projects') }}" class="image"><img src="{{ url_for('static', filename='images/house_prices.jpg') }}" alt="" style="width: 420px; height: 250px;" /></a>
+                        <a href="{{ url_for('views.projects', project_name='house') }}" class="image"><img src="{{ url_for('static', filename='images/house_prices.jpg') }}" alt="" style="width: 420px; height: 250px;" /></a>
                         <h3>Nashville Housing Prices</h3>
                         <p>This advanced regressional analysis project aims to uncover underlying patterns and relationships within the Nashville Property market. I implement regressor trees using sci-kit learn & XGBoost to highlight features that contribute to the property price</p>
                         <ul class="actions">
-                            <li><a href="{{ url_for('views.projects') }}" class="button">More</a></li>
+                            <li><a href="{{ url_for('views.projects',project_name='house') }}" class="button">More</a></li>
                         </ul>
                     </article>
                     <article>
-                        <a href="{{ url_for('views.projects') }}" class="image"><img src="https://storage.googleapis.com/kaggle-media/competitions/Spaceship%20Titanic/joel-filipe-QwoNAhbmLLo-unsplash.jpg" alt=""  style="width: 420px; height: 250px;"/></a>
+                        <a href="{{ url_for('views.projects', project_name='titanic') }}" class="image"><img src="https://storage.googleapis.com/kaggle-media/competitions/Spaceship%20Titanic/joel-filipe-QwoNAhbmLLo-unsplash.jpg" alt=""  style="width: 420px; height: 250px;"/></a>
                         <h3>Spaceship Titanic</h3>
                         <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
                         <ul class="actions">
-                            <li><a href="{{ url_for('views.projects') }}" class="button">More</a></li>
+                            <li><a href="{{ url_for('views.projects', project_name='titanic') }}" class="button">More</a></li>
                         </ul>
                     </article>
                     <article>
-                        <a href="{{ url_for('views.projects') }}" class="image"><img src="{{ url_for('static', filename='images/Sales.jpg') }}" alt="" style="width: 420px; height: 250px;"/></a>
+                        <a href="{{ url_for('views.projects', project_name='sales') }}" class="image"><img src="{{ url_for('static', filename='images/Sales.jpg') }}" alt="" style="width: 420px; height: 250px;"/></a>
                         <h3>e-Commerce Sales Analysis</h3>
                         <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
                         <ul class="actions">
-                            <li><a href="{{ url_for('views.projects') }}" class="button">More</a></li>
+                            <li><a href="{{ url_for('views.projects', project_name='sales') }}" class="button">More</a></li>
                         </ul>
                     </article>
                     <article>
-                        <a href="{{ url_for('views.projects') }}" class="image"><img src="{{ url_for('static', filename='images/customer_retention.jpg') }}" alt="" style="width: 420px; height: 250px;"/></a>
+                        <a href="{{ url_for('views.projects', project_name='churn') }}" class="image"><img src="{{ url_for('static', filename='images/customer_retention.jpg') }}" alt="" style="width: 420px; height: 250px;"/></a>
                         <h3>Customer Churn Prediction</h3>
                         <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
                         <ul class="actions">
-                            <li><a href="{{ url_for('views.projects') }}" class="button">More</a></li>
-                        </ul>
+                            <li><a href="{{ url_for('views.projects', project_name='churn') }}" class="button">More</a></li>
+                        </ul> 
                     </article>
                     <article>
-                        <a href="{{ url_for('views.projects') }}" class="image"><img src="{{ url_for('static', filename='images/insurance_claims.jpg') }}" alt="" style="width: 420px; height: 250px;"/></a>
+                        <a href="{{ url_for('views.projects', project_name='insurance') }}" class="image"><img src="{{ url_for('static', filename='images/insurance_claims.jpg') }}" alt="" style="width: 420px; height: 250px;"/></a>
                         <h3>Insurance Claims Analysis</h3>
                         <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
                         <ul class="actions">
-                            <li><a href="{{ url_for('views.projects') }}" class="button">More</a></li>
+                            <li><a href="{{ url_for('views.projects', project_name='insurance') }}" class="button">More</a></li>
                         </ul>
                     </article>
                     <article>
-                        <a href="{{ url_for('views.projects') }}" class="image"><img src="{{ url_for('static', filename='images/algo_trading.jpg') }}" alt="" style="width: 420px; height: 250px;"/></a>
+                        <a href="{{ url_for('views.projects', project_name='house') }}" class="image"><img src="{{ url_for('static', filename='images/algo_trading.jpg') }}" alt="" style="width: 420px; height: 250px;"/></a>
                         <h3>Algorithmic Trading</h3>
                         <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
                         <ul class="actions">
-                            <li><a href="{{ url_for('views.projects') }}" class="button">More</a></li>
+                            <li><a href="{{ url_for('views.projects', project_name='house') }}" class="button">More</a></li>
                         </ul>
                     </article>
                 </div>
