@@ -78,7 +78,7 @@ html {
   box-sizing: inherit; }
 
 body {
-  background: #f8f9ea; }
+  background: #efefe694; }
   body.is-preload *, body.is-preload *:before, body.is-preload *:after, body.is-resizing *, body.is-resizing *:before, body.is-resizing *:after {
     -moz-animation: none !important;
     -webkit-animation: none !important;
@@ -91,7 +91,7 @@ body {
 
 /* Type */
 body, input, select, textarea {
-  color: #8f8f7f;
+  color: #7f8f8e;
   font-family: "Open Sans", sans-serif;
   font-size: 13pt;
   font-weight: 400;
@@ -2198,7 +2198,7 @@ button,
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  color: #3d4449;
+  color: #44795c;
   font-family: "Roboto Slab", serif;
   font-weight: 400;
   letter-spacing: 0.075em;
