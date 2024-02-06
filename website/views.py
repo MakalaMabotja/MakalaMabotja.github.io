@@ -11,6 +11,11 @@ views = Blueprint('views', __name__)
 def design():
     return render_template('elements.html')
 
+@views.route('/coming_soon/<tag>')
+def coming_soon(tag):
+    return render_template('coming_soon.html', tag=tag)
+
+
 @views.route('/')
 def home():
     return render_template('home.html')
