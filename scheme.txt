@@ -6,6 +6,7 @@ project folder
 |--- home.html
 |--- index.html
 |--- projects.html
+|--- coming_soon.html
 |-__init__.py
 |- projects.json
 |- projects.py
