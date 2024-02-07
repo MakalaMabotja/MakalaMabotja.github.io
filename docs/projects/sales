@@ -34,208 +34,198 @@
 									</ul>
 								</header>
 								
-<!-- Banner -->
-<section id="banner">
-    <div class="content">
-        <header>
-            <h1>Sales Data Analysis</h1>
-        </header>
-        <p>This project focuses on applying data science techniques to sales functions within an organization. It outlines customer segmentation, customer lifetime value analysis, and sales forecasting to enhance marketing, guide customer retention strategies, and enable data-driven business decisions. The proposal utilizes Python and R along with libraries like Pandas, Scikit-learn, and TensorFlow to cluster customers, predict future revenue, and build forecasting models.
-        </p>
-    </div>  
-    <span class="image object">
-        <img src="/static/images/Sales.jpg" class="rounded mx-auto d-block" alt="Sales Data Analysis" />
+		<!-- Banner -->
+		<section id="banner">
+			<div class="content">
+				<header>
+					<h1>Sales Data Analysis</h1>
+				</header>
+				<p>This project focuses on applying data science techniques to sales functions within an organization. It outlines customer segmentation, customer lifetime value analysis, and sales forecasting to enhance marketing, guide customer retention strategies, and enable data-driven business decisions. The proposal utilizes Python and R along with libraries like Pandas, Scikit-learn, and TensorFlow to cluster customers, predict future revenue, and build forecasting models.
+				</p>
+			</div>  
+			<span class="image object">
+				<img src="/static/images/Sales.jpg" class="rounded mx-auto d-block" alt="Sales Data Analysis" />
 
-    </span>
-</section>
-
-
-
-								
-<!-- Projects Section -->
-<section>
-    <header class="major">
-        <h2>Sections</h2>
-    </header>
-    <div class="row">
-        
-            <div class="col-6 col-12-small">
-                
-                    <article>
-                        <span href=https://github.com/MakalaMabotja/Sales-Data-Project/blob/main/Sales%20data%20cleaning%20%26%20EDA.ipynb class="image fit">
-                            
-                            <img src="/static/images/data_cleaning.jpg" class="rounded mx-auto d-block" alt="Data Cleaning &amp; EDA" style="text-align: center; width: 480px; height: 300px;" />
-                            
-                        </span>
-                        <h3>Data Cleaning &amp; EDA</h3>
-                        <p>The data cleaning process handles missing values and outliers. EDA utilizes Pandas and Matplotlib to analyze the distribution of customer age, gender breakdown, average transaction amount, purchase frequency, and other metrics. Visualizations like histograms and scatter plots are created to uncover insights.</p>
-                        <!-- Add other details like tools, URL, image, note based on the index -->
-                        <ul>
-                            <li>Tools: Python, Pandas &amp; Matplotlib</li>
-                            <ul class="actions">
-                                <li><a href=https://github.com/MakalaMabotja/Sales-Data-Project/blob/main/Sales%20data%20cleaning%20%26%20EDA.ipynb class="button">View Code</a></li>
-                            </ul>
-                            <!-- Add other details as needed -->
-                        </ul>
-                    </article>
-                
-            </div>
-        
-            <div class="col-6 col-12-small">
-                
-                    <article>
-                        <span href=https://github.com/MakalaMabotja/Sales-Data-Project/blob/main/RFM%20clustering.ipynb class="image fit">
-                            
-                            <img src="/static/images/customer_segmentation.jpg" class="rounded mx-auto d-block" alt="Customer Segmentation" style="text-align: center; width: 480px; height: 300px;" />
-                            
-                        </span>
-                        <h3>Customer Segmentation</h3>
-                        <p>This notebook performs exploratory data analysis on a dataset of customer demographics, purchase history, and online behavior. It utilizes Python and Pandas to analyze metrics like average transaction amount, purchase frequency, and customer age distribution. The analysis aims to uncover insights to guide customer segmentation for targeted marketing. </p>
-                        <!-- Add other details like tools, URL, image, note based on the index -->
-                        <ul>
-                            <li>Tools: Pandas, Seaborn &amp; KMeans</li>
-                            <ul class="actions">
-                                <li><a href=https://github.com/MakalaMabotja/Sales-Data-Project/blob/main/RFM%20clustering.ipynb class="button">View Code</a></li>
-                            </ul>
-                            <!-- Add other details as needed -->
-                        </ul>
-                    </article>
-                
-            </div>
-        
-            <div class="col-6 col-12-small">
-                
-                    <article>
-                        <span href=https://github.com/MakalaMabotja/Sales-Data-Project/blob/main/CLTV%20analysis.ipynb class="image fit">
-                            
-                            <img src="/static/images/customer_value.jpg" class="rounded mx-auto d-block" alt="Customer Lifetime Value" style="text-align: center; width: 480px; height: 300px;" />
-                            
-                        </span>
-                        <h3>Customer Lifetime Value</h3>
-                        <p> This notebook builds a machine learning model to predict customer lifetime value based on purchase history data. It applies data preprocessing, feature engineering, and model selection techniques in Python. The best performing XGBoost model is interpreted to identify key drivers of high customer lifetime value.</p>
-                        <!-- Add other details like tools, URL, image, note based on the index -->
-                        <ul>
-                            <li>Tools: Numpy, Lifetimes &amp; Matplotlib</li>
-                            <ul class="actions">
-                                <li><a href=https://github.com/MakalaMabotja/Sales-Data-Project/blob/main/CLTV%20analysis.ipynb class="button">View Code</a></li>
-                            </ul>
-                            <!-- Add other details as needed -->
-                        </ul>
-                    </article>
-                
-            </div>
-        
-            <div class="col-6 col-12-small">
-                
-                    <article>
-                        <span href=https://github.com/MakalaMabotja/Sales-Data-Project/blob/main/Sales%20Forecasting.ipynb class="image fit">
-                            
-                            <img src="/static/images/sales_forecasting.jpg" class="rounded mx-auto d-block" alt="Sales Forecasting" style="text-align: center; width: 480px; height: 300px;" />
-                            
-                        </span>
-                        <h3>Sales Forecasting</h3>
-                        <p>This notebook forecasts product demand using Facebook Prophet. Historical sales data is prepared and fed into the model which captures trends, seasonality, and holiday effects. The optimized model provides accurate monthly and weekly demand forecasts to guide inventory planning. </p>
-                        <!-- Add other details like tools, URL, image, note based on the index -->
-                        <ul>
-                            <li>Tools: StatsModels, Sci-kit Learn &amp; XGBoost</li>
-                            <ul class="actions">
-                                <li><a href=https://github.com/MakalaMabotja/Sales-Data-Project/blob/main/Sales%20Forecasting.ipynb class="button">View Code</a></li>
-                            </ul>
-                            <!-- Add other details as needed -->
-                        </ul>
-                    </article>
-                
-            </div>
-        
-    </div>
-
-</section>
+			</span>
+		</section>
 
 
-<script>
-    // Your existing GitHub projects fetching script here...
-</script>
 
-						</div>
-					</div>
-
-				<!-- Sidebar -->
-					<div id="sidebar">
-						<div class="inner">
-
-							<!-- Search -->
-								<section id="search" class="alt">
-									<form method="post" action="#">
-										<input type="text" name="query" id="query" placeholder="Search" />
-									</form>
-								</section>
-
-								<!-- Menu -->
-								<nav id="menu">
-									<header class="major">
-										<h2>Menu</h2>
-									</header>
-									<ul>
-										<li><a href="/">Homepage</a></li>
-        								<li><a href="/about/">About Me</a></li>
-										<li>
-											<span class="opener">Project Work</span>
-											<ul>
-												<li><a href="/projects/sales">e-Commerce Sales Analysis</a></li>
-												<li><a href="/projects/churn">Churn Prediction</a></li>
-												<li><a href="/projects/house">Pricing Predictions</a></li>
-												<li><a href="/projects/titanic">Spaceship Titanic</a></li>
-												<li><a href="/projects/insurance">Insurance Claims Analysis</a></li>
-												<li><a href="/coming_soon/algo%20trader">Algorithmic Trader</a></li>
-											</ul>
-										</li>
-										<li>
-											<span class="opener">Research</span>
-											<ul>
-												<li><a href="/coming_soon/research">Learning Data Science</a></li>
-												<li><a href="/coming_soon/research">Advantages of Data Science</a></li>
-												<li><a href="/coming_soon/research">Machine Learning Modeling</a></li>
-												<li><a href="/coming_soon/research">Solutions Architecture</a></li>
-											</ul>
-										</li>
-										<li><a href="/coming_soon/blog">Blog</a></li>
-										<!-- Design Elements coded out for production purposes
-										<li><a href="/design">Design Elements</a></li>
-										-->
+										
+		<!-- Projects Section -->
+		<section>
+			<header class="major">
+				<h2>Sections</h2>
+			</header>
+			<div class="row">
+				
+					<div class="col-6 col-12-small">
+						
+							<article>
+								<span href=https://github.com/MakalaMabotja/Sales-Data-Project/blob/main/Sales%20data%20cleaning%20%26%20EDA.ipynb class="image fit">
+									
+									<img src="/static/images/data_cleaning.jpg" class="rounded mx-auto d-block" alt="Data Cleaning &amp; EDA" style="text-align: center; width: 480px; height: 300px;" />
+									
+								</span>
+								<h3>Data Cleaning &amp; EDA</h3>
+								<p>The data cleaning process handles missing values and outliers. EDA utilizes Pandas and Matplotlib to analyze the distribution of customer age, gender breakdown, average transaction amount, purchase frequency, and other metrics. Visualizations like histograms and scatter plots are created to uncover insights.</p>
+								<!-- Add other details like tools, URL, image, note based on the index -->
+								<ul>
+									<li>Tools: Python, Pandas &amp; Matplotlib</li>
+									<ul class="actions">
+										<li><a href=https://github.com/MakalaMabotja/Sales-Data-Project/blob/main/Sales%20data%20cleaning%20%26%20EDA.ipynb class="button">View Code</a></li>
 									</ul>
-								</nav>
-
-							<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>Get in touch</h2>
-									</header>
-									<p>Should you wish to discuss any projects or collaborate you can get in touch with me</p>
-									<ul class="contact">
-										<li class="icon solid fa-envelope"><a href="#">makalamabotjasfp@gmail.com</a></li>
-										<li class="icon solid fa-phone">(+27) 78 940 6815</li>
-										<li class="icon solid fa-home">Pretoria, Gauteng<br />
-										South Africa</li>
-									</ul>
-								</section>
-
-							<!-- Footer -->
-								<footer id="footer">
-									<p class="copyright">&copy; Makala Mabotja. All rights reserved. Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-								</footer>
-
-						</div>
+									<!-- Add other details as needed -->
+								</ul>
+							</article>
+						
 					</div>
-
+				
+					<div class="col-6 col-12-small">
+						
+							<article>
+								<span href=https://github.com/MakalaMabotja/Sales-Data-Project/blob/main/RFM%20clustering.ipynb class="image fit">
+									
+									<img src="/static/images/customer_segmentation.jpg" class="rounded mx-auto d-block" alt="Customer Segmentation" style="text-align: center; width: 480px; height: 300px;" />
+									
+								</span>
+								<h3>Customer Segmentation</h3>
+								<p>This notebook performs exploratory data analysis on a dataset of customer demographics, purchase history, and online behavior. It utilizes Python and Pandas to analyze metrics like average transaction amount, purchase frequency, and customer age distribution. The analysis aims to uncover insights to guide customer segmentation for targeted marketing. </p>
+								<!-- Add other details like tools, URL, image, note based on the index -->
+								<ul>
+									<li>Tools: Pandas, Seaborn &amp; KMeans</li>
+									<ul class="actions">
+										<li><a href=https://github.com/MakalaMabotja/Sales-Data-Project/blob/main/RFM%20clustering.ipynb class="button">View Code</a></li>
+									</ul>
+									<!-- Add other details as needed -->
+								</ul>
+							</article>
+						
+					</div>
+				
+					<div class="col-6 col-12-small">
+						
+							<article>
+								<span href=https://github.com/MakalaMabotja/Sales-Data-Project/blob/main/CLTV%20analysis.ipynb class="image fit">
+									
+									<img src="/static/images/customer_value.jpg" class="rounded mx-auto d-block" alt="Customer Lifetime Value" style="text-align: center; width: 480px; height: 300px;" />
+									
+								</span>
+								<h3>Customer Lifetime Value</h3>
+								<p> This notebook builds a machine learning model to predict customer lifetime value based on purchase history data. It applies data preprocessing, feature engineering, and model selection techniques in Python. The best performing XGBoost model is interpreted to identify key drivers of high customer lifetime value.</p>
+								<!-- Add other details like tools, URL, image, note based on the index -->
+								<ul>
+									<li>Tools: Numpy, Lifetimes &amp; Matplotlib</li>
+									<ul class="actions">
+										<li><a href=https://github.com/MakalaMabotja/Sales-Data-Project/blob/main/CLTV%20analysis.ipynb class="button">View Code</a></li>
+									</ul>
+									<!-- Add other details as needed -->
+								</ul>
+							</article>
+						
+					</div>
+				
+					<div class="col-6 col-12-small">
+						
+							<article>
+								<span href=https://github.com/MakalaMabotja/Sales-Data-Project/blob/main/Sales%20Forecasting.ipynb class="image fit">
+									
+									<img src="/static/images/sales_forecasting.jpg" class="rounded mx-auto d-block" alt="Sales Forecasting" style="text-align: center; width: 480px; height: 300px;" />
+									
+								</span>
+								<h3>Sales Forecasting</h3>
+								<p>This notebook forecasts product demand using Facebook Prophet. Historical sales data is prepared and fed into the model which captures trends, seasonality, and holiday effects. The optimized model provides accurate monthly and weekly demand forecasts to guide inventory planning. </p>
+								<!-- Add other details like tools, URL, image, note based on the index -->
+								<ul>
+									<li>Tools: StatsModels, Sci-kit Learn &amp; XGBoost</li>
+									<ul class="actions">
+										<li><a href=https://github.com/MakalaMabotja/Sales-Data-Project/blob/main/Sales%20Forecasting.ipynb class="button">View Code</a></li>
+									</ul>
+									<!-- Add other details as needed -->
+								</ul>
+							</article>
+						
+					</div>
+				
 			</div>
 
-		<!-- Scripts -->
-			<script src="/static/js/jquery.min.js"></script>
-			<script src="/static/js/browser.min.js"></script>
-			<script src="/static/js/breakpoints.min.js"></script>
-			<script src="/static/js/util.js"></script>
-			<script src="/static/js/main.js"></script>
-		
-		
-	</body>
-</html>
+		</section>
+
+			<!-- Sidebar -->
+				<div id="sidebar">
+					<div class="inner">
+
+						<!-- Search -->
+							<section id="search" class="alt">
+								<form method="post" action="#">
+									<input type="text" name="query" id="query" placeholder="Search" />
+								</form>
+							</section>
+
+							<!-- Menu -->
+							<nav id="menu">
+								<header class="major">
+									<h2>Menu</h2>
+								</header>
+								<ul>
+									<li><a href="/">Homepage</a></li>
+									<li><a href="/about/">About Me</a></li>
+									<li>
+										<span class="opener">Project Work</span>
+										<ul>
+											<li><a href="/projects/sales">e-Commerce Sales Analysis</a></li>
+											<li><a href="/projects/churn">Churn Prediction</a></li>
+											<li><a href="/projects/house">Pricing Predictions</a></li>
+											<li><a href="/projects/titanic">Spaceship Titanic</a></li>
+											<li><a href="/projects/insurance">Insurance Claims Analysis</a></li>
+											<li><a href="/coming_soon/algo%20trader">Algorithmic Trader</a></li>
+										</ul>
+									</li>
+									<li>
+										<span class="opener">Research</span>
+										<ul>
+											<li><a href="/coming_soon/research">Learning Data Science</a></li>
+											<li><a href="/coming_soon/research">Advantages of Data Science</a></li>
+											<li><a href="/coming_soon/research">Machine Learning Modeling</a></li>
+											<li><a href="/coming_soon/research">Solutions Architecture</a></li>
+										</ul>
+									</li>
+									<li><a href="/coming_soon/blog">Blog</a></li>
+									<!-- Design Elements coded out for production purposes
+									<li><a href="/design">Design Elements</a></li>
+									-->
+								</ul>
+							</nav>
+
+									<!-- Section -->
+										<section>
+											<header class="major">
+												<h2>Get in touch</h2>
+											</header>
+											<p>Should you wish to discuss any projects or collaborate you can get in touch with me</p>
+											<ul class="contact">
+												<li class="icon solid fa-envelope"><a href="#">makalamabotjasfp@gmail.com</a></li>
+												<li class="icon solid fa-phone">(+27) 78 940 6815</li>
+												<li class="icon solid fa-home">Pretoria, Gauteng<br />
+												South Africa</li>
+											</ul>
+										</section>
+
+									<!-- Footer -->
+										<footer id="footer">
+											<p class="copyright">&copy; Makala Mabotja. All rights reserved. Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+										</footer>
+
+					</div>
+				</div>
+
+				<!-- Scripts -->
+					<script src="/static/js/jquery.min.js"></script>
+					<script src="/static/js/browser.min.js"></script>
+					<script src="/static/js/breakpoints.min.js"></script>
+					<script src="/static/js/util.js"></script>
+					<script src="/static/js/main.js"></script>
+				
+				
+			</body>
+		</html>
