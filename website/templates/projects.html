@@ -21,40 +21,54 @@
 {% endblock %}
 
 {% block body %}
-<!-- Projects Section -->
-<section>
-    <header class="major">
-        <h2>Sections</h2>
-    </header>
-    <div class="row">
-        {% for i in range(projects_data['sections']|length) %}
-            <div class="col-6 col-12-small">
+        <!-- Projects Section -->
+        <section>
+            <header class="major">
+                <h2>Sections</h2>
+            </header>
+            <div class="row">
+                {% for i in range(projects_data['sections']|length) %}
+                    <div class="col-6 col-12-small">
+                        
+                            <article>
+                                <span href={{ projects_data['urls'][i] }} class="image fit">
+                                    
+                                    <img src="{{ url_for('static', filename=projects_data['images'][i]) }}" class="rounded mx-auto d-block" alt="{{ projects_data['sections'][i] }}" style="text-align: center; width: 480px; height: 300px;" />
+                                    
+                                </span>
+                                <h3>{{ projects_data['sections'][i] }}</h3>
+                                <p>{{ projects_data['section_text'][i] }}</p>
+                                <!-- Add other details like tools, URL, image, note based on the index -->
+                                <ul>
+                                    <li>Tools: {{ projects_data['tools'][i] }}</li>
+                                    <ul class="actions">
+                                        <li><a href={{projects_data['urls'][i]}} class="button">View Code</a></li>
+                                    </ul>
+                                
+                                </ul>
+                            </article>
                 
-                    <article>
-                        <span href={{ projects_data['urls'][i] }} class="image fit">
-                            
-                            <img src="{{ url_for('static', filename=projects_data['images'][i]) }}" class="rounded mx-auto d-block" alt="{{ projects_data['sections'][i] }}" style="text-align: center; width: 480px; height: 300px;" />
-                            
-                        </span>
-                        <h3>{{ projects_data['sections'][i] }}</h3>
-                        <p>{{ projects_data['section_text'][i] }}</p>
-                        <!-- Add other details like tools, URL, image, note based on the index -->
-                        <ul>
-                            <li>Tools: {{ projects_data['tools'][i] }}</li>
-                            <ul class="actions">
-                                <li><a href={{projects_data['urls'][i]}} class="button">View Code</a></li>
-                            </ul>
-                            <!-- Add other details as needed -->
-                        </ul>
-                    </article>
-                
+                    </div>
+                {% endfor %}
+
             </div>
-        {% endfor %}
-    </div>
 
-</section>
+        </section>
 
+        <article>
+                        
+            <hr class="major" />
 
+            <header class="major">
+                <h2>Summary</h2>
+            </header>
+            {% for j in range(projects_data['notes']|length) %}
+                <p>
+                    {{ projects_data['notes'][j] }}
+                </p>
+                {% endfor %}
+            
+            </article>
 <script>
     // Your existing GitHub projects fetching script here...
 </script>
