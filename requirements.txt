@@ -2,4 +2,4 @@ Flask
 Flask-Login
 Frozen-Flask
 requests
-json
+jsons
