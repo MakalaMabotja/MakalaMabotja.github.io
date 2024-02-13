@@ -1,5 +1,5 @@
 Flask
-flask_login
-flask_frozen
+Flask-Login
+Frozen-Flask
 requests
 json
