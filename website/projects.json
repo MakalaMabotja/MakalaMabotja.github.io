@@ -21,18 +21,20 @@
             "images/customer_value.jpg",
             "images/sales_forecasting.jpg"
     ],
-    "notes":["The Optimizing Sales Function with Data Science project empowers businesses with actionable insights derived from robust data analysis and machine learning techniques. Understanding customer behaviors, predicting future sales, and targeting marketing efforts effectively can enhance customer satisfaction, streamline operations, and maximize revenue streams."]
+    "notes":["The Optimizing Sales Function with Data Science project empowers businesses with actionable insights derived from robust data analysis and machine learning techniques.",
+    "Understanding customer behaviors, predicting future sales, and targeting marketing efforts effectively can enhance customer satisfaction, streamline operations, and maximize revenue streams."
+        ]
 
 },
         "churn":{
         "title":"Customer Churn Prediction",
         "banner_image": "images/customer_retention.jpg",
-        "description":"A Business' ability to accurately forecast future sales and the likelihood for customers to make return purchases is vital to any organization. With Machine learning we are able to predict when a customer is likely to return vs. churn and go to our competitors.This project consists of 2 parts: An inital EDA and model building. Feature Enginering and Model Fine Tuning",
+        "description":"A Business' ability to accurately forecast future sales and the likelihood for customers to make return purchases is vital to any organization. With Machine learning we are able to predict when a customer is likely to return vs. churn and go to our competitors.This project consists of 2 parts. Part 1: An inital EDA and model building. Part 2: Feature Enginering and Model Fine Tuning",
         "sections":["Data Cleaning & EDA","Initial Model Building & Testing","Feature Engineering","Machine Learning Model Final"],
-        "section_text":["The data cleaning process handles missing values and outliers. EDA utilizes Pandas and Matplotlib to analyze the distribution of customer age, gender breakdown, average transaction amount, purchase frequency, and other metrics. Visualizations like histograms and scatter plots are created to uncover insights.",
-                    "This notebook performs exploratory data analysis on a dataset of customer demographics, purchase history, and online behavior. It utilizes Python and Pandas to analyze metrics like average transaction amount, purchase frequency, and customer age distribution. The analysis aims to uncover insights to guide customer segmentation for targeted marketing. ",
-                    " This notebook builds a machine learning model to predict customer lifetime value based on purchase history data. It applies data preprocessing, feature engineering, and model selection techniques in Python. The best performing XGBoost model is interpreted to identify key drivers of high customer lifetime value.",
-                    "This notebook forecasts product demand using Facebook Prophet. Historical sales data is prepared and fed into the model which captures trends, seasonality, and holiday effects. The optimized model provides accurate monthly and weekly demand forecasts to guide inventory planning. "
+        "section_text":["For this project we will be building a binary classification model to identify customers that churn. For this we need our data to be able to be fitted on to a regression model thus we need to explore the distribution of the data. We also need to detect any missing values and outliers that may impact our model's ability to predict",
+                    "Python includes an extensive library of ready-made models that we can utilize for this purpose. The key objective is to select the one that performs best for our data. During the EDA & data cleaning we found our data to be missing a lot of values thus our model needs to be robust enough to handle this type of data",
+                    "In the initial model building phase we found the best performing ML model. For us to make improvements to the accuracy of our model we need to process the data so that it gives our machine the ability to detect trends in our data and make more accurate predictions",
+                    "The final and most crucial step of building machine learning applications is to fine tune the hyperparameter of our model. The parameters we will be setting will help fit our model to the variance better and ensure that we don't create overfitting to the training data that we will use"
                     ],
         "tools":["Pandas, Scipy & Seaborn","Sci-kit Learn, XGBoost & TensorFlow","Pandas, Scipy & Seaborn","XGBoost, CATBoost & LightGB"],
         "urls":["https://github.com/MakalaMabotja/Sales-Data-Project/blob/main/Sales%20data%20cleaning%20%26%20EDA.ipynb",
@@ -52,7 +54,7 @@
         "house":{
         "title":"House Prices Prediction",
         "banner_image": "images/house_prices.jpg",
-        "description":"This project analyzes Nashville housing data through data cleaning, exploratory data analysis (EDA), SQL data preparation, feature engineering, and machine learning for price prediction, employing various techniques such as imputation, logarithmic transformation, PCA, and training multiple models including Decision Tree, XGBoost, Linear Regression, Random Forest, SVM, MLP, and LSTM, with evaluation metrics such as RMSE, MAE, and MAPE utilized. The file structure includes raw, cleaned, and SQL-extracted datasets along with relevant libraries utilized.",
+        "description":"This project utilizes multiple linear regression techniques to predcit the prrice of a property based on different variables such as age of the house, location, size & building type. To build the regression models I cleaned the using SQL through SQL server management studio.",
         "sections":["SQL Data Processing", "Data Cleaning & EDA","Feature Engineering","Model Building & Evaluation"],
         "section_text":["The data cleaning process handles missing values and outliers. EDA utilizes Pandas and Matplotlib to analyze the distribution of customer age, gender breakdown, average transaction amount, purchase frequency, and other metrics. Visualizations like histograms and scatter plots are created to uncover insights.",
                     "This notebook performs exploratory data analysis on a dataset of customer demographics, purchase history, and online behavior. It utilizes Python and Pandas to analyze metrics like average transaction amount, purchase frequency, and customer age distribution. The analysis aims to uncover insights to guide customer segmentation for targeted marketing. ",
