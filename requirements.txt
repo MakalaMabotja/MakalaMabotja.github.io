@@ -1,5 +1,0 @@
-Flask
-flask_login
-flask_frozen
-requests
-json
