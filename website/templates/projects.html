@@ -41,12 +41,16 @@
                         <!-- Add other details like tools, URL, image, note based on the index -->
                         <ul>
                             <li>Tools: {{ projects_data['tools'][i] }}</li>
-                            <ul class="actions">
-                                <li><a href={{projects_data['urls'][i]}} class="button">View Code</a></li>
-                            </ul>
+                            
                             <!-- Add other details as needed -->
                         </ul>
                     </article>
+                    
+                    <ul class="actions">
+                        <li>
+                            <a href={{projects_data['urls'][i]}} class="button">View Code</a>
+                        </li>
+                    </ul>
                 
             </div>
         {% endfor %}
