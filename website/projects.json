@@ -108,7 +108,7 @@
                 "https://public.tableau.com/views/Dashboard_17066338442540/OVERVIEW?:language=en-US&:display_count=n&:origin=viz_share_link"
                 ],
         "images":[
-                "images/insurance_claims.webp",
+                "images/insurance-membership.jpg",
                 "images/insurance_tableau.png"
         ],
         "notes":["For the clustering, I need to do a scatterplot of the RFM with the size of the plot being Monerary and the colour being the cluster",
