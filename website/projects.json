@@ -43,7 +43,7 @@
                 "images/data_cleaning2.jpg",
                 "images/churn_feature_importance.png",
                 "images/feature_engineering_plot.png",
-                "images/churn_results.webp"
+                "images/churn_results.jpg"
         ],
         "notes":["For the clustering, I need to do a scatterplot of the RFM with the size of the plot being Monerary and the colour being the cluster",
                 "For the urls, I will be linking the github code repository for now."]
@@ -86,7 +86,7 @@
         "urls":["https://github.com/MakalaMabotja/Kaggle-Titanic-Competition/blob/main/Spaceship%20Titanic%20EDA.ipynb",
                 "https://github.com/MakalaMabotja/Kaggle-Titanic-Competition/blob/main/Prediction%20Model.ipynb"],
         "images":[
-                "images/titanic_eda.webp",
+                "images/titanic_eda.jpg",
                 "images/titanic_predictions.jpg"
         ],
         "notes":["For the clustering, I need to do a scatterplot of the RFM with the size of the plot being Monerary and the colour being the cluster",
