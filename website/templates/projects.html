@@ -9,8 +9,10 @@
         <header>
             <h1>{{projects_data.title}}</h1>
         </header>
-        <p>{{projects_data.description}}
+        {% for i in range(projects_data['description']|length)%}
+        <p>{{projects_data.description[i]}}
         </p>
+        {% endfor %}
     </div>  
     <span class="image object">
         <img src="{{ url_for('static', filename=projects_data.banner_image) }}" class="rounded mx-auto d-block" alt="{{ projects_data.title }}" />
