@@ -3,11 +3,11 @@
         {
     "title":"Sales Data Analysis",
     "banner_image": "images/Sales.jpg",
-    "description":["This project focuses on applying data science techniques to sales functions within an organization. It outlines customer segmentation, customer lifetime value analysis, and sales forecasting to enhance marketing, guide customer retention strategies, and enable data-driven business decisions.",
-                        "The proposal utilizes Python and R along with libraries like Pandas, Scikit-learn, and TensorFlow to cluster customers, predict future revenue, and build forecasting models."],
+    "description":["The sales department of any company plays a vital role in their ability to sustain themselves and grow their revenue. Together with marketing, recruitment and the analytics teams, companies find ways to unlock further revenue streams that will help them grow. One question that every business tries to answer is how do they go about solving issues with thier sales",
+                   "To answer that question, data scientists find relationships within historical performances to help maximize efforts towards growing the company's revenue. This project aims to do so through customer segmentation using Kmeans clustering, forecasting future sales using regression models and predicting customer behaviour through machine learning."],
     "sections":["Data Cleaning & EDA","Customer Segmentation","Customer Lifetime Value","Sales Forecasting"],
-    "section_text":["The data cleaning process handles missing values and outliers. EDA utilizes Pandas and Matplotlib to analyze the distribution of customer age, gender breakdown, average transaction amount, purchase frequency, and other metrics. Visualizations like histograms and scatter plots are created to uncover insights.",
-                "This notebook performs exploratory data analysis on a dataset of customer demographics, purchase history, and online behavior. It utilizes Python and Pandas to analyze metrics like average transaction amount, purchase frequency, and customer age distribution. The analysis aims to uncover insights to guide customer segmentation for targeted marketing. ",
+    "section_text":["The data cleaning process handles missing values and outliers within our data. EDA utilizes Pandas and Matplotlib to analyze the distribution of customer age, gender breakdown, average transaction amount, purchase frequency, and other metrics. For us to buid our regression models we need to understand the distribution of our data in relation to the predicted variable which is sales.",
+                "This notebook performs exploratory data analysis on customer demographics, purchase history, and online behavior. I uses Pandas and Seaborn to analyze metrics like average transactions, purchase value, and age distribution. This analysis utilizes unsupervised learning to cluster our customers into groups that have similar bahviours for us to detect patterns in customer behaviours. ",
                 " This notebook builds a machine learning model to predict customer lifetime value based on purchase history data. It applies data preprocessing, feature engineering, and model selection techniques in Python. The best performing XGBoost model is interpreted to identify key drivers of high customer lifetime value.",
                 "This notebook forecasts product demand using Facebook Prophet. Historical sales data is prepared and fed into the model which captures trends, seasonality, and holiday effects. The optimized model provides accurate monthly and weekly demand forecasts to guide inventory planning. "
                 ],
@@ -15,14 +15,16 @@
     "urls":["https://github.com/MakalaMabotja/Sales-Data-Project/blob/main/Sales%20data%20cleaning%20%26%20EDA.ipynb",
             "https://github.com/MakalaMabotja/Sales-Data-Project/blob/main/RFM%20clustering.ipynb",
             "https://github.com/MakalaMabotja/Sales-Data-Project/blob/main/CLTV%20analysis.ipynb",
-            "https://github.com/MakalaMabotja/Sales-Data-Project/blob/main/Sales%20Forecasting.ipynb"],
+            "https://github.com/MakalaMabotja/Sales-Data-Project/blob/main/Sales%20Forecasting.ipynb",
+            "https://github.com/MakalaMabotja/Sales-Data-Project.git"
+        ],
     "images":[
             "images/data_cleaning.jpg",
             "images/customer_segmentation.jpg",
             "images/customer_value.jpg",
             "images/sales_forecasting.jpg"
     ],
-    "notes":["The Optimizing Sales Function with Data Science project empowers businesses with actionable insights derived from robust data analysis and machine learning techniques.",
+    "notes":["Using data science to optimize the business' sales function empowers the business with actionable insights derived from robust data analysis and machine learning techniques.",
     "Understanding customer behaviors, predicting future sales, and targeting marketing efforts effectively can enhance customer satisfaction, streamline operations, and maximize revenue streams."
         ]
 
@@ -30,64 +32,70 @@
         "churn":{
         "title":"Customer Churn Prediction",
         "banner_image": "images/customer_retention.jpg",
-        "description":["A Business' ability to accurately forecast future sales and the likelihood for customers to make return purchases is vital to any organization. With Machine learning we are able to predict when a customer is likely to return vs. churn and go to our competitors.This project consists of 2 parts.","Part 1: An inital EDA and model building. Part 2: Feature Enginering and Model Fine Tuning"],
+        "description":["When our customers stop making purchases from us and go to our competitors, that serevely impacts our company's earnings. Every company aims to effectively prevent their customers from churning and implement various retention methods. The question for any business is knowing when your customers will churn",
+                        "Using data science we can accurately classify our customers as either likely to stay or likely to churn. In this project I used logistic regression to build binary classification models using Decision Trees to accurately predict customer churn"],
         "sections":["Data Cleaning & EDA","Initial Model Building & Testing","Feature Engineering","Machine Learning Model Final"],
-        "section_text":["For this project we will be building a binary classification model to identify customers that churn. For this we need our data to be able to be fitted on to a regression model thus we need to explore the distribution of the data. We also need to detect any missing values and outliers that may impact our model's ability to predict",
-                    "Python includes an extensive library of ready-made models that we can utilize for this purpose. The key objective is to select the one that performs best for our data. During the EDA & data cleaning we found our data to be missing a lot of values thus our model needs to be robust enough to handle this type of data",
-                    "In the initial model building phase we found the best performing ML model. For us to make improvements to the accuracy of our model we need to process the data so that it gives our machine the ability to detect trends in our data and make more accurate predictions",
-                    "The final and most crucial step of building machine learning applications is to fine tune the hyperparameter of our model. The parameters we will be setting will help fit our model to the variance better and ensure that we don't create overfitting to the training data that we will use"
+        "section_text":["For us to build our decision trees we need to ensure that our data does not contain missing values and that we convert our descriptive categorical into valuable numerical features. Exploratory Data Analysis (EDA) helps in understanding the underlying patterns, relationships, and potential variables influencing customer churn, providing insights crucial for feature selection and model building.",
+                    "I approached this problem in two parts: The initial model building to find the best fitting model to use and then further performed feature engineering to optimize the accuracy. Python includes various decision tree models in its libraries, including Sci-kit learn, Random Forests & Gradient Boosted trees. The data that I worked on contained a lot of missing values which influenced the selection process.",
+                    "In the initial model building phase we found the best performing ML model to be Gradient Boosted Decision Trees. For us to make improvements to the accuracy of our model we need to process the data by filling in missing values, converting categorical variables into numerical features and shape the distribution of the data by transforming it to allow our model to fit the data better.",
+                    "The final and most crucial step of building machine learning applications is to fine tune the parameters of our model to help it better detect the variance in the data and more importantly to avoid overfitting. When training our model we want it to be as accurate as possible but also be robust enough to be able to fit onto unseen data without losing its accuracy. I used cross-validation and hyperparameter tuning."
                     ],
-        "tools":["Pandas, Scipy & Seaborn","Sci-kit Learn, XGBoost & TensorFlow","Pandas, Scipy & Seaborn","XGBoost, CATBoost & LightGB"],
-        "urls":["https://github.com/MakalaMabotja/Sales-Data-Project/blob/main/Sales%20data%20cleaning%20%26%20EDA.ipynb",
-                "https://github.com/MakalaMabotja/Sales-Data-Project/blob/main/RFM%20clustering.ipynb",
-                "https://github.com/MakalaMabotja/Sales-Data-Project/blob/main/CLTV%20analysis.ipynb",
-                "https://github.com/MakalaMabotja/Sales-Data-Project/blob/main/Sales%20Forecasting.ipynb"],
+        "tools":["Pandas, Scipy & Seaborn","Sci-kit Learn, XGBoost & TensorFlow","Pandas, Sci-kit Learn & Seaborn","XGBoost, CATBoost & LightGB"],
+        "urls":["https://github.com/MakalaMabotja/Customer-Churn-Prediction-Competition-Sasol--Zindi-/blob/main/Data%20Cleaning.ipynb",
+                "https://github.com/MakalaMabotja/Customer-Churn-Prediction-Competition-Sasol--Zindi-/blob/main/Churn%20prediction.ipynb",
+                "https://github.com/MakalaMabotja/Customer-Churn-Prediction-Competition-Sasol--Zindi-/blob/main/Feature%20Engineering.ipynb",
+                "https://github.com/MakalaMabotja/Customer-Churn-Prediction-Competition-Sasol--Zindi-/blob/main/Model%20Building%20%26%20Ensembling.ipynb",
+                "https://github.com/MakalaMabotja/Customer-Churn-Prediction-Competition-Sasol--Zindi-.git"
+        ],
         "images":[
                 "images/data_cleaning2.jpg",
                 "images/churn_feature_importance.png",
                 "images/feature_engineering_plot.png",
                 "images/churn_results.jpg"
         ],
-        "notes":["For the clustering, I need to do a scatterplot of the RFM with the size of the plot being Monerary and the colour being the cluster",
-                "For the urls, I will be linking the github code repository for now."]
+        "notes":["Customer Churn Prediction models can be highly effective in driving retention strategies. Italian economist Pareto stated that 80% of sales come from existing customer and being able to keep your customers happy, a business can grow their sales year on year.",
+                "This project was part of an online competition hosted on Zindi, an international community for data scientist, where i placed in the top 20 for my solution. The accuracy of the model was an F-score of 0.7 which means it predicted the right outcome 70% of the time."]
     
     },
         "house":{
         "title":"House Prices Prediction",
         "banner_image": "images/house_prices.jpg",
-        "description":["This project utilizes multiple linear regression techniques to predcit the prrice of a property based on different variables such as age of the house, location, size & building type.","To build the regression models I cleaned the using SQL through SQL server management studio."],
-        "sections":["SQL Data Processing", "Data Cleaning & EDA","Feature Engineering","Model Building & Evaluation"],
-        "section_text":["The data cleaning process handles missing values and outliers. EDA utilizes Pandas and Matplotlib to analyze the distribution of customer age, gender breakdown, average transaction amount, purchase frequency, and other metrics. Visualizations like histograms and scatter plots are created to uncover insights.",
-                    "This notebook performs exploratory data analysis on a dataset of customer demographics, purchase history, and online behavior. It utilizes Python and Pandas to analyze metrics like average transaction amount, purchase frequency, and customer age distribution. The analysis aims to uncover insights to guide customer segmentation for targeted marketing. ",
-                    " This notebook builds a machine learning model to predict customer lifetime value based on purchase history data. It applies data preprocessing, feature engineering, and model selection techniques in Python. The best performing XGBoost model is interpreted to identify key drivers of high customer lifetime value.",
-                    "This notebook forecasts product demand using Facebook Prophet. Historical sales data is prepared and fed into the model which captures trends, seasonality, and holiday effects. The optimized model provides accurate monthly and weekly demand forecasts to guide inventory planning. "
+        "description":["When thinking about house prices, one would assume that the prices are inflluenced by inflation and they increase from the previous year's prices. However in this Kaggle dataset, the house prices do not display a time series patter which makes this an interesting project to work on.",
+                        "This project involves the prediction of prices based on multiple variables (multilinear regression). I first preprocessed the data using SQL to format the data into the correct format then proceeded to build regressional models using scipy and sci-kit learn "
+                ],
+        "sections":["SQL Data Processing", "Model Building & Evaluation"],
+        "section_text":["SQL is a query language for relational structured (tabular) databases. I used it to process the dataset table into a more usable format. Using JOINs & CASE statements I filled in the missing values and transformed the categorical data into numerical features. I then exported it as a csv file to load into my model.",
+                    "To build the regressional model first I had to explore the data using python to find relationships between the predictors and the response variable. I then proceeded to build the linear regression model after preproceesing and using the Mean Average Percentage Error (MAPE) to measure the model's accuracy."
                     ],
-        "tools":["Python, Pandas & Matplotlib","Pandas, Seaborn & KMeans","Numpy, Lifetimes & Matplotlib","StatsModels, Sci-kit Learn & XGBoost"],
-        "urls":["https://github.com/MakalaMabotja/Sales-Data-Project/blob/main/Sales%20data%20cleaning%20%26%20EDA.ipynb",
-                "https://github.com/MakalaMabotja/Sales-Data-Project/blob/main/RFM%20clustering.ipynb",
-                "https://github.com/MakalaMabotja/Sales-Data-Project/blob/main/CLTV%20analysis.ipynb",
-                "https://github.com/MakalaMabotja/Sales-Data-Project/blob/main/Sales%20Forecasting.ipynb"],
+        "tools":["MS SQL Server Management Studio","Pandas, StatsModels, Seaborn & Sci-Kit Learn"],
+        "urls":["https://github.com/MakalaMabotja/Nashville-House-Prices-Prediction/blob/main/Nashville%20Housing%20SQL%20Project.sql",
+                "https://github.com/MakalaMabotja/Nashville-House-Prices-Prediction/blob/main/Nashville%20House%20Prices%20EDA.ipynb",
+                "https://github.com/MakalaMabotja/Nashville-House-Prices-Prediction.git"
+        ],
         "images":[
                 "images/data_cleaning.jpg",
-                "images/customer_segmentation.jpg",
-                "images/customer_value.jpg",
-                "images/sales_forecasting.jpg"
+                "images/customer_segmentation.jpg"
         ],
-        "notes":["For the clustering, I need to do a scatterplot of the RFM with the size of the plot being Monerary and the colour being the cluster",
-                "For the urls, I will be linking the github code repository for now."]
+        "notes":["In a business context, we use multilinear regression to determine the impact that one aspect of the business unit has on the overall performance of the company as a whole. For example marketing can build Market Mix Models using multilinear regression to determine which marketing channel (i.e Radio) has the best return on investment.",
+                "This is one of my earliest attempts at a Kaggle competition and I built a basic model to explore how each library handles the regression model building process and further to explore which model performs best at creating accurate models.The Percentage Error (MAPE) for this model is 65% meaning that it is off by 65% on average which is not the greatest and could be improved by feature engineering."
+        ]
     
     },
         "titanic":{
         "title":"Spaceship Titanic: Classification Model",
         "banner_image": "images/titanic.jpg",
-        "description":["This project focuses on applying data science techniques to sales functions within an organization. It outlines customer segmentation, customer lifetime value analysis, and sales forecasting to enhance marketing, guide customer retention strategies, and enable data-driven business decisions.","The proposal utilizes Python and R along with libraries like Pandas, Scikit-learn, and TensorFlow to cluster customers, predict future revenue, and build forecasting models."],
-        "sections":["Data Cleaning & EDA","Customer Segmentation"],
-        "section_text":["The data cleaning process handles missing values and outliers. EDA utilizes Pandas and Matplotlib to analyze the distribution of customer age, gender breakdown, average transaction amount, purchase frequency, and other metrics. Visualizations like histograms and scatter plots are created to uncover insights.",
-                    "This notebook performs exploratory data analysis on a dataset of customer demographics, purchase history, and online behavior. It utilizes Python and Pandas to analyze metrics like average transaction amount, purchase frequency, and customer age distribution. The analysis aims to uncover insights to guide customer segmentation for targeted marketing. "
+        "description":["This project is a fresh take on the Kaggle Titanic competition. In this project there are passengers of a space voyage that have been struct with tradegy and we need to determine whom amongst them have survived and who have been transported to the wrong location",
+                        "Binary classification models involve logistic regression model that predict the outcome of two events. We use this to classify each passenger as either safe or transported by the space anomoly that they were trapped in."
+],
+        "sections":["Data Cleaning & EDA","Model Building & Evaluation"],
+        "section_text":["The data cleaning process handles missing values and outliers. EDA utilizes Pandas and Matplotlib to analyze the distribution of age, gender breakdown, location of the passenger at the time of event and other important variables that can be important to predictions. Visualizations like histograms and scatter plots are used  created to uncover insights.",
+                    "For us to build the model we need the data to be transformed using StandardScaler to normalize the data for our model to be able to fit the data better. I also explore the different Tree based models that would fit the data best and fine tuned the best performing model to get the most accurate results."
                     ],
-        "tools":["Python, Pandas & Matplotlib","Pandas, Seaborn & KMeans","Numpy, Lifetimes & Matplotlib","StatsModels, Sci-kit Learn & XGBoost"],
+        "tools":["Pandas, NumPy & Matplotlib","Scipy & Sci-Kit Learn"],
         "urls":["https://github.com/MakalaMabotja/Kaggle-Titanic-Competition/blob/main/Spaceship%20Titanic%20EDA.ipynb",
-                "https://github.com/MakalaMabotja/Kaggle-Titanic-Competition/blob/main/Prediction%20Model.ipynb"],
+                "https://github.com/MakalaMabotja/Kaggle-Titanic-Competition/blob/main/Prediction%20Model.ipynb",
+                "https://github.com/MakalaMabotja/Kaggle-Titanic-Competition.git"
+        ],
         "images":[
                 "images/titanic_eda.jpg",
                 "images/titanic_predictions.jpg"
@@ -99,23 +107,24 @@
         "insurance":{
         "title":"Insurance Claims Analysis",
         "banner_image": "images/insurance_claims.jpg",
-        "description":["This project focuses on applying data science techniques to sales functions within an organization. It outlines customer segmentation, customer lifetime value analysis, and sales forecasting to enhance marketing, guide customer retention strategies, and enable data-driven business decisions.","The proposal utilizes Python and R along with libraries like Pandas, Scikit-learn, and TensorFlow to cluster customers, predict future revenue, and build forecasting models."],
+        "description":["The project is based on a fictional insurance company based in Australia that have members in their company with various insurance covers supplied by various enterprise product suppliers. Based off my experience in the financial services industry, it is important to keep an overview of your client base for gaps in their financial planning, client relationship management and to know which product supplier is not only widely favoured but also cost-efficient for your clients needs",
+                        "To bring these insights to life, I seamlessly integrated my SQL expertise with Tableau's powerful data visualization capabilities. By translating complex datasets into visually compelling dashboards and interactive visualizations, I offered a comprehensive narrative. This synergy of SQL querying and Tableau's visual storytelling demonstrated my ability to transform raw data into actionable intelligence, empowering stakeholders to make informed decisions and drive the company's growth trajectory."
+],
         "sections":["Data Analysis with SQL","Data Visualization with Tableau"],
-        "section_text":["The data cleaning process handles missing values and outliers. EDA utilizes Pandas and Matplotlib to analyze the distribution of customer age, gender breakdown, average transaction amount, purchase frequency, and other metrics. Visualizations like histograms and scatter plots are created to uncover insights.",
-                    "This notebook performs exploratory data analysis on a dataset of customer demographics, purchase history, and online behavior. It utilizes Python and Pandas to analyze metrics like average transaction amount, purchase frequency, and customer age distribution. The analysis aims to uncover insights to guide customer segmentation for targeted marketing. ",
-                    " This notebook builds a machine learning model to predict customer lifetime value based on purchase history data. It applies data preprocessing, feature engineering, and model selection techniques in Python. The best performing XGBoost model is interpreted to identify key drivers of high customer lifetime value.",
-                    "This notebook forecasts product demand using Facebook Prophet. Historical sales data is prepared and fed into the model which captures trends, seasonality, and holiday effects. The optimized model provides accurate monthly and weekly demand forecasts to guide inventory planning. "
+        "section_text":["In SQL operations, I adeptly navigated complex datasets, crafting intricate queries and optimizing database performance to extract meaningful insights crucial for decision-making. Meticulous data management and manipulation facilitated seamless extraction and transformation processes, unlocking hidden patterns and correlations for stakeholders' strategic initiatives.",
+                    "Utilizing Tableau's advanced visualization capabilities, I transformed raw data into captivating narratives, crafting visually stunning dashboards and interactive visualizations that empowered stakeholders to explore trends and derive actionable conclusions. Each visualization served as a storytelling canvas, fostering deeper engagement and facilitating more informed decision-making processes across the organization. "
                     ],
-        "tools":["Python, Pandas & Matplotlib","Pandas, Seaborn & KMeans","Numpy, Lifetimes & Matplotlib","StatsModels, Sci-kit Learn & XGBoost"],
-        "urls":["https://github.com/MakalaMabotja/Data-Science-Projects/blob/main/Insurance%20Member%20data%20SQL%20Project.sql",
-                "https://public.tableau.com/views/Dashboard_17066338442540/OVERVIEW?:language=en-US&:display_count=n&:origin=viz_share_link"
+        "tools":["MS SQL Server Management Studio", "Data Visualization on Tableau"],
+        "urls":["https://github.com/MakalaMabotja/Insurance-Claims-analysis/blob/main/Insurance%20Member%20data%20SQL%20Project.sql",
+                "https://public.tableau.com/views/Dashboard_17066338442540/OVERVIEW?:language=en-US&:display_count=n&:origin=viz_share_link",
+                "https://github.com/MakalaMabotja/Insurance-Claims-analysis.git"
                 ],
         "images":[
                 "images/insurance-membership.jpg",
                 "images/insurance_tableau.png"
         ],
-        "notes":["For the clustering, I need to do a scatterplot of the RFM with the size of the plot being Monerary and the colour being the cluster",
-                "For the urls, I will be linking the github code repository for now."]
+        "notes":["Conducting in-depth data analysis and visualization on an insurance company's member data serves several crucial business purposes. Firstly, it enables a comprehensive understanding of the customer base, including demographics, geographic concentrations, and occupational profiles. This information is invaluable for targeted marketing, product development, and risk assessment tailored to specific segments. Secondly, examining coverage details, premiums, and claims histories reveals gaps, trends, and profitability insights, allowing for strategic pricing, underwriting adjustments, and product optimization. ",
+                "Overall, leveraging member data analysis empowers insurance companies to design products that closely align with customer needs, accurately assess and mitigate risks, optimize pricing strategies, and ultimately drive profitability and customer satisfaction."]
     
     }
 }
