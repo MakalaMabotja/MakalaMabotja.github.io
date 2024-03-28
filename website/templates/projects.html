@@ -13,6 +13,11 @@
         <p>{{projects_data.description[i]}}
         </p>
         {% endfor %}
+        <ul class="actions">
+            <li>
+                <a href={{projects_data['urls'][-1]}} class="button icon brands fa-github">View Repo</a>
+            </li>
+        </ul>
     </div>  
     <span class="image object">
         <img src="{{ url_for('static', filename=projects_data.banner_image) }}" class="rounded mx-auto d-block" alt="{{ projects_data.title }}" />
@@ -50,7 +55,7 @@
                     
                     <ul class="actions">
                         <li>
-                            <a href={{projects_data['urls'][i]}} class="button">View Code</a>
+                            <a href={{projects_data['urls'][i]}} class="button icon brands fa-github">View Code</a>
                         </li>
                     </ul>
                 
