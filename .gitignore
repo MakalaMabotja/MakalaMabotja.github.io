@@ -55,6 +55,7 @@ cover/
 *.mo
 *.pot
 website/projects template.docx
+website/static/images/favicon_package_v0.16.zip
 
 # Django stuff:
 *.log
